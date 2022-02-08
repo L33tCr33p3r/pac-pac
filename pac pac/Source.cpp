@@ -64,7 +64,7 @@ int main() {
 		screen.clear(); //wipes screen, without this things smear
 		for (int rows = 0; rows < 18; rows++)
 			for (int cols = 0; cols < 32; cols++) {
-				if (map[rows][cols] == 1) {
+				if (map[cols][rows] == 1) {
 					wall.setPosition(cols * 40, rows * 40);
 					screen.draw(wall);
 				}
